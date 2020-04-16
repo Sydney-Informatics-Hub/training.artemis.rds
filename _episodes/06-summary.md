@@ -22,7 +22,7 @@ cd MyDirectory
 wget -O dogScripts.tar.gz https://cloudstor.aarnet.edu.au/plus/s/F5bB2g9Gemn1xMj/download
 tar -zxvf dogScripts.tar.gz 
 mv dogScripts/* .
-wget https://ftp.ncbi.nlm.nih.gov/genomes/Canis_lupus_familiaris/CHR_05/cfa_ref_CanFam3.1_chr5.fa.gz
+wget https://biomirror.mirror.ac.za/ncbigenomes/Canis_familiaris/CHR_05/cfa_ref_CanFam3.1_chr5.fa.gz
 gunzip cfa_ref_CanFam3.1_chr5.fa.gz 
 ```
 
