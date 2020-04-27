@@ -13,6 +13,8 @@ The live training consists of instruction and practical exercises, covering tool
 **Follow-on courses:** This course is **part two** of the **[Artemis HPC Training Series]({{ site.series_home }})**.
 It follows on from the introductory courses  [‘_Introduction to Artemis HPC_’]({{ site.sih_pages }}/training.artemis.introhpc). 
 
+**Recorded Lesson:** You can watch the recorded lesson from April 24, 2020, here: [https://cloudstor.aarnet.edu.au/plus/s/Yb3c4nqE48PwoT4](https://cloudstor.aarnet.edu.au/plus/s/Yb3c4nqE48PwoT4)
+
 > ## Prerequisites
 > You must have competency on the Unix/Linux command line. If you are interested in learning HPC but have no Unix/Linux command-line skills, you MUST first take an [Introduction to Unix/Linux](https://intersect.org.au/training/course/unix) course, followed by [‘_Introduction to Artemis HPC_’]({{ site.sih_pages }}/training.artemis.interhpc). These are [scheduled regularly on campus](https://informatics.sydney.edu.au/training/#calendar).
 >
