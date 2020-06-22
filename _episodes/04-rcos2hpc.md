@@ -158,17 +158,17 @@ Just as we accessed Artemis through the FileZilla interface earlier, we can like
 
 From external to university network:
 ```
-rcos.sydney.edu.au 
+research-data-ext.sydney.edu.au
 ```
 
 From internal to university network:
 ```
-rcos-int.sydney.edu.au  
+research-data-int.sydney.edu.au  
 ```
 
 Open FileZilla and in the host field enter: 
 ~~~
-sftp://rcos-int.sydney.edu.au 
+sftp://research-data-int.sydney.edu.au
 ~~~
 {: .bash}
  
