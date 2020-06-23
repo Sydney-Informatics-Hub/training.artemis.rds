@@ -9,7 +9,7 @@ objectives:
 - "Create a new folder"
 - "Change directory to your new folder"
 keypoints:
-- "Recall the difference between _Classic_ and _RCOS_ RDS"
+- "Recall the difference between _Classic_ and _RCOS_ and _nextgen_ RDS"
 - "Recall how to connect to Artemis HPC"
 ---
 This episode introduces the Research Data Storage options available at the University of Sydney, and how we can interface and interact with them.
@@ -25,7 +25,7 @@ Artemis is not backed up. Its hardware is geared towards processing. We have a d
 
 ***Classic RDS*** is a Windows-style (CIFS) data storage service accessible as a network drive on Windows, Mac and Linux systems. Network accessibility is handy if you often access your RDS data locally. You can read RDS data into local applications, or easily drag and drop files between your local hard drive (or USB/external hard drive) and classic RDS. Transfer of data between ‘classic’ RDS and Artemis is more difficult, and thus not the recommended data storage option for you if you are a frequent HPC user or work with large datasets.
 
-~~ICT will be implementing a more seamless RDS in the future!~~ ICT has implemented a seamless RDS comprising the benefits of both Classic and RCOS systems.
+~~ICT will be implementing a more seamless RDS in the future!~~ ICT has implemented a seamless RDS comprising the benefits of both Classic and RCOS systems (called ***NextGen RDS**)
 
 Check out the online documentation for more information:
 [https://sydneyuni.atlassian.net/wiki/spaces/RC/overview](https://sydneyuni.atlassian.net/wiki/spaces/RC/overview)
