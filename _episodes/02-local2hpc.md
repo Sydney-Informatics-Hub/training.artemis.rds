@@ -34,14 +34,14 @@ scp <user@host:file> <user@host:to>
 ```
 
 
-Since the file to be transferred is local, you do not need to include user@host. Run the below command to copy the scripts archive to your working directory on Artemis:
+Since the file to be transferred is local, you do not need to include user@host. Run the below command **from a local terminal window** to copy the scripts archive to your working directory on Artemis:
 
 ~~~
 scp dogScripts.tar.gz  ict_hpctrain<N>@hpc.sydney.edu.au:/project/Training/<yourDirectoryName>
 ~~~
 {: .bash}
  
-Then unpack the archive, move the scripts, and delete the archive and empty directory:
+Then **on a remote (Artemis connection) terminal window** unpack the archive, move the scripts, and delete the archive and empty directory:
 
 ~~~
 tar -zxvf dogScripts.tar.gz 
@@ -99,7 +99,7 @@ To upload the file to Artemis, you can use any of the following methods:
 
 As you can see, FileZilla is very simple to use. It can be used just as easily to transfer files from Artemis to your local computer, by simply initiating the transfer from the right (source=Artemis) to the left (destination=local computer). 
 
-Now go back to your terminal connected to Artemis and run the following commands to unpack the archive, move the scripts, and delete the archive and empty directory:
+Now go back to your **remote terminal connected to Artemis** and run the following commands to unpack the archive, move the scripts, and delete the archive and empty directory:
 
 ~~~
 tar -zxvf dogScripts.tar.gz 
