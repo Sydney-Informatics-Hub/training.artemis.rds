@@ -4,7 +4,7 @@ layout: page
 root: "."
 ---
 
-# 4. Get a shell terminal emulator
+# 1. Get a shell terminal emulator
 
 To connect to Artemis HPC, and follow this lesson, you will need a **'terminal emulator'** program installed on your computer. Often just called a 'terminal', or 'shell terminal', 'shell client', terminal emulators give you a window with a _command line interface_ through which you can send commands to be executed by your computer.
 
@@ -61,17 +61,31 @@ Head to [https://putty.org](https://putty.org) and download PuTTY. You can insta
 
 Install Ubuntu or some other Linux distro on the Windows Subsystem for Linux see [here for details](https://ubuntu.com/tutorials/tutorial-ubuntu-on-windows#1-overview). This one will give you a full suite of Linux functions and I like it for emulating Linux.
 
-# Off-campus access
+<br>
+
+# 2. Get a GUI file transfer application
+If you are not fully comfortable moving data on the command line you can use various file transfer applications. Mac OSX and linuz have the command line tools built in already. Windows users will need to enable WSL and install a Linux distro (or CYGWIN or equivalent) or else use the interative platforms below.
+
+## A. FileZilla (Recommended)
+This application can be installed on Windows, Mac OSX and Linux. Use it to make SFTP connections and move data between local and remote machines. Be wary of bundled bloatware on installation. [https://filezilla-project.org/](https://filezilla-project.org/)
+
+## B. WinSCP
+Windows only, a great stand alone application to move data between local and remote computers. 
+[https://winscp.net/](https://winscp.net/eng/index.php)
+
+<br>
+
+# 3. Off-campus access
 
 If you're attempting this training by yourself, or following on **[Zoom](https://uni-sydney.zoom.us/)**, _off-campus_ then you'll need to connect to the USyd internet network _before_ you can connect to Artemis.
 
 There are a couple ways to do this:
 
-## 1. The USyd VPN
+## A. The USyd VPN
 
 **VPN** (Virtual Private Network) is a protocol that allows you to tap into a local private network remotely. Follow USyd ICT's instructions [on service now](https://sydneyuni.service-now.com/sm?id=kb_article_view&sysparm_article=KB0011049&sys_kb_id=9e86e1a3dbdf0c50e35b89e4059619b9). Once you've connected to the Cisco Anyconnect VPN, the above connection methods will work, just as though you were on-campus.
 
-## 2. Use the Artemis Jump server
+## B. Use the Artemis Jump server
 
 Artemis provides a 'gateway' server, called **Jump**, that allows connections from outside the University network, and is itself on the network. From the Jump server, you can then connect to Artemis directly. If using the Jump server, you will need to edit the **host address** used in the instructions above:
 
@@ -80,7 +94,7 @@ Artemis provides a 'gateway' server, called **Jump**, that allows connections fr
 This will connect you to Jump, rather than Artemis itself. You can then connect to Artemis directly via **SSH**. See [Episode 1 of the _Introduction to Artemis HPC_ course]({{ site.sih_pages }}/training.artemis.introhpc/01-intro).
 
 
-# Graphical login nodes
+# 4. Graphical login nodes (Optional advanced connection)
 
 There is one final way to access Artemis, and that is using our _graphical login nodes_. These special are graphics-enabled login servers which host 'NoMachine', a kind of remote desktop service.
 
