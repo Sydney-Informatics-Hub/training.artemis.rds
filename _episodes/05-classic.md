@@ -32,7 +32,7 @@ smbclient <path> -U <unikey> -W SHARED
 In this case: 
 
 ~~~
-smbclient //research-data-2.shared.sydney.edu.au/RDS-02 -U ict_hpctrain1 -W SHARED 
+smbclient //shared.sydney.edu.au/research-data -U ict_hpctrain1 -W SHARED 
 ~~~
 {: .bash}
 
@@ -53,7 +53,7 @@ recurse on
 Now, move into one of our project folders and make a directory for the dataset: 
 
 ~~~
-cd PRJ-IQ3ClassicAttempt2
+cd PRJ-SIHnextgen
 
 mkdir Dog_disease 
 
@@ -86,7 +86,7 @@ These steps work Windoes 10 are:
 
 * Click on This PC from the Desktop.
 * On the Computer tab, click on Map network drive in the Network section.
-* Choose a drive letter and enter your Classic RDS path: ```\\research-data-2.shared.sydney.edu.au\RDS-02```.
+* Choose a drive letter and enter your Classic RDS path: ```\\shared.sydney.edu.au\research-data```.
 * Enter ```SHARED\<UniKey>``` and your password.
 * Click Finish.
 
@@ -95,11 +95,13 @@ These steps work Windoes 10 are:
 </figure><br>
 
 ### On Mac and Linux
-To mount on Linux or Mac operating systems, you can use the smb network communication protocol (also known as CIFS) by mounting the path with:
+To mount on Linux or Mac operating systems, you can use the smb network communication protocol (also known as CIFS) by mounting the path. 
+On Mac OSX this feature is located from ```Finder > Go > Connect to Server```. In the ```Server Address``` use:
 
 ```
-smb://research-data-2.shared.sydney.edu.au/RDS-02
+smb://shared.sydney.edu.au/research-data
 ```
+Then use Name:```<UniKey>``` and Password:```<unikey password>``` as a Registered User. 
  
 For a full discussion, and further mounting instructions for Windows/Mac OSX, and Linux, see here:
 [https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/229146744/Classic+RDS](https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/229146744/Classic+RDS)
