@@ -23,34 +23,6 @@ Note for Windows users: if you would prefer to use command line rather than inst
 
 Note for Mac users: you can use your Mac terminal app. Keep your Artemis session open, and open a new Mac terminal for your local session. It is often convenient to work with multiple environments open at the same time.
 
-
-## Instructions for using command line ‘scp’ to copy a local file to Artemis:
-
-First, change into the directory that contains the data you want to transfer (or else you will need to prepend the full pathname in front of the file name). 
-
-The syntax for scp is
-```
-scp <user@host:file> <user@host:to> 
-```
-
-
-Since the file to be transferred is local, you do not need to include user@host. Run the below command **from a local terminal window** to copy the scripts archive to your working directory on Artemis:
-
-~~~
-scp dogScripts.tar.gz  ict_hpctrain<N>@hpc.sydney.edu.au:/project/Training/<yourDirectoryName>
-~~~
-{: .bash}
- 
-Then **on a remote (Artemis connection) terminal window** unpack the archive, move the scripts, and delete the archive and empty directory:
-
-~~~
-tar -zxvf dogScripts.tar.gz 
-mv dogScripts/* . 
-rmdir dogScripts 
-~~~
-{: .bash}
-
-
 ## Instructions for using FileZilla to copy a local file to Artemis:
 
 Open FileZilla. 
@@ -99,7 +71,30 @@ To upload the file to Artemis, you can use any of the following methods:
 
 As you can see, FileZilla is very simple to use. It can be used just as easily to transfer files from Artemis to your local computer, by simply initiating the transfer from the right (source=Artemis) to the left (destination=local computer). 
 
-Now go back to your **remote terminal connected to Artemis** and run the following commands to unpack the archive, move the scripts, and delete the archive and empty directory:
+
+## Instructions for using command line ‘scp’ to copy a local file to Artemis:
+
+First, change into the directory that contains the data you want to transfer (or else you will need to prepend the full pathname in front of the file name). 
+
+The syntax for scp is
+```
+scp <user@host:file> <user@host:to> 
+```
+
+
+Since the file to be transferred is local, you do not need to include user@host. Run the below command **from a local terminal window** to copy the scripts archive to your working directory on Artemis:
+
+~~~
+scp dogScripts.tar.gz  ict_hpctrain<N>@hpc.sydney.edu.au:/project/Training/<yourDirectoryName>
+~~~
+{: .bash}
+ 
+Done. Now that file is on Artemis in the folder you have uploaded it to.
+
+
+# Check the file uploaded and unpack it
+
+Now go back to your **remote terminal connected to Artemis** and run the following commands to untar the archive, move the scripts, and delete the archive and empty directory:
 
 ~~~
 tar -zxvf dogScripts.tar.gz 
