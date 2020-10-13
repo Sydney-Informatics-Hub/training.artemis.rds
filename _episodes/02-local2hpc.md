@@ -23,7 +23,7 @@ Note for Windows users: if you would prefer to use command line rather than inst
 
 Note for Mac users: you can use your Mac terminal app. Keep your Artemis session open, and open a new Mac terminal for your local session. It is often convenient to work with multiple environments open at the same time.
 
-## Instructions for using FileZilla to copy a local file to Artemis:
+### Instructions for using FileZilla to copy a local file to Artemis:
 
 Open FileZilla. 
 
@@ -72,7 +72,7 @@ To upload the file to Artemis, you can use any of the following methods:
 As you can see, FileZilla is very simple to use. It can be used just as easily to transfer files from Artemis to your local computer, by simply initiating the transfer from the right (source=Artemis) to the left (destination=local computer). 
 
 
-## Instructions for using command line ‘scp’ to copy a local file to Artemis:
+### Instructions for using command line ‘scp’ to copy a local file to Artemis:
 
 First, change into the directory that contains the data you want to transfer (or else you will need to prepend the full pathname in front of the file name). 
 
