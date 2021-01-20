@@ -82,7 +82,7 @@ Single files can be transferred from Artemis to classic RDS with ```put```. Sing
 ## Mounting ‘classic RDS’ on your local machine.
 Dependng on your operating system there are few ways to mount the classic RDS as a network drive.
 
-These steps work Windoes 10 are:
+These steps on Windows 10 are:
 
 * Click on This PC from the Desktop.
 * On the Computer tab, click on Map network drive in the Network section.
