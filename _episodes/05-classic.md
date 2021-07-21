@@ -104,7 +104,7 @@ smb://shared.sydney.edu.au/research-data
 Then use Name:```<UniKey>``` and Password:```<unikey password>``` as a Registered User. 
  
 For a full discussion, and further mounting instructions for Windows/Mac OSX, and Linux, see here:
-[https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/229146744/Classic+RDS](https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/229146744/Classic+RDS)
+[https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/228589620/Research+Data+Store](https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/228589620/Research+Data+Store)
 
 
 
