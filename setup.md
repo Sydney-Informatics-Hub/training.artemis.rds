@@ -41,7 +41,7 @@ However, those aren't going to work for us, as you'll need extra programs and ut
 
 ### i. PuTTY (Recommended)
 
-PuTTY, an SSH and telnet client, is another good simple option. However, note that PuTTY **does not** provide an X11 server, so you won't be able to use GUI programs on Artemis with _just_ PuTTY.
+PuTTY, an SSH and telnet client, is a good simple option. However, note that PuTTY **does not** provide an X11 server, so you won't be able to use GUI programs on Artemis with _just_ PuTTY.
 
 Head to [https://putty.org](https://putty.org) and download PuTTY. You can install it to your computer, or just download the 'binary' and run it directly. Create a new session for use with Artemis as follows:
 
@@ -53,11 +53,14 @@ Head to [https://putty.org](https://putty.org) and download PuTTY. You can insta
    <img src="{{ page.root }}/fig/s_putty.png" style="margin:10px;height:400px" >
 2. Name this session **"Artemis"** and click 'Save'
 
-### ii. X-Win32
+### ii. MobaXterm
+[MobaXterm](https://mobaxterm.mobatek.net/download.html) offers a rich experience as a full-featured X-server and terminal emulator for ssh connections, the free version is more than adequate.
+
+### iii. X-Win32
 
 [X-Win32](https://www.starnet.com/xwin32/) is full-featured X-server and terminal emulator for Windows. USyd [provides a license](http://staff.ask.sydney.edu.au/app/answers/detail/a_id/316) for it; however, the download link is restricted to staff so, students. Install, and follow the instructions on the USyd-ICT page to activate -- you'll need to be on the USyd network or [VPN](http://staff.ask.sydney.edu.au/app/answers/detail/a_id/519/kw/vpn) to do so.
 
-### iii. WSL and Ubuntu
+### iv. WSL and Ubuntu
 
 Install Ubuntu or some other Linux distro on the Windows Subsystem for Linux see [here for details](https://ubuntu.com/tutorials/tutorial-ubuntu-on-windows#1-overview). This one will give you a full suite of Linux functions and I like it for emulating Linux.
 
