@@ -13,7 +13,7 @@ keypoints:
 - "Map a local network mount"
 ---
 
-# Transfer from Artemis to ‘classic RDS’ 
+## Transfer from Artemis to ‘classic RDS’ 
 
 Your collaborator wants you to bring a local copy of the data to the conference next week. You don’t have much space for this massive dataset on your laptop, so you back it up to ‘classic RDS’ so you can easily show the data via your mapped network drive. 
 
@@ -94,7 +94,7 @@ These steps work Windoes 10 are:
   <img src="{{ page.root }}/fig/pic09_classicmount.png" style="margin:10px;width:600px"/>
 </figure><br>
 
-### On Mac and Linux
+## On Mac and Linux
 To mount on Linux or Mac operating systems, you can use the smb network communication protocol (also known as CIFS) by mounting the path. 
 On Mac OSX this feature is located from ```Finder > Go > Connect to Server```. In the ```Server Address``` use:
 
@@ -106,7 +106,7 @@ Then use Name:```<UniKey>``` and Password:```<unikey password>``` as a Registere
 For a full discussion, and further mounting instructions for Windows/Mac OSX, and Linux, see here:
 [https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/228589620/Research+Data+Store](https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/228589620/Research+Data+Store)
 
-### On Linux Command Line/Terminal with the NextgenRDS
+## On Linux Command Line/Terminal with the NextgenRDS
 If you prefer to use the command line, the easiest way to mount the RDS is using a tool called ```sshfs``` which connects via the ```ssh``` protocol and performs file transfers using ```sftp```. 
 
 Firstly install ```sshfs```. There are many ways to do this depending on your specific flavour of Unix/OSX, on Ubuntu for instance one can run:
