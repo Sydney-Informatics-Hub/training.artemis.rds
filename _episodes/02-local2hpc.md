@@ -15,7 +15,7 @@ keypoints:
 
 Back to the case study... Since you have not run this kind of analysis before, your helpful collaborator has emailed you a ‘tar’ file (a 'tape archive' or in modern times, simply a packaged directory) of scripts to use to analyse the data. 
 
-This file should have been emailed to you via Eventbrite. Please download the ***dogScripts.tar.gz*** file to your local computer for your email. Do not unpack it just yet. You can also download it from here: [https://cloudstor.aarnet.edu.au/plus/s/F5bB2g9Gemn1xMj](https://cloudstor.aarnet.edu.au/plus/s/F5bB2g9Gemn1xMj)
+This file should have been emailed to you via Eventbrite. Please download the ***dogScripts.tar.gz*** file to your local computer for your email. Do not unpack it just yet. You can also download it from here: [https://cloudstor.aarnet.edu.au/plus/s/aV5uHrWzJ9PNZHj](https://cloudstor.aarnet.edu.au/plus/s/aV5uHrWzJ9PNZHj)
 
 This local file needs to be transferred to the Artemis HPC. This can be done via a Graphical User Interface (GUI) tool (i.e. “point and click”) such as [FileZilla](https://filezilla-project.org/) or [WinSCP](https://winscp.net/eng/download.php), or via the command line. You may choose whichever method you prefer. Please note: if you choose to install FileZilla, ensure to UNSELECT the sneaky inclusion of any bloatware during the installation!
 
