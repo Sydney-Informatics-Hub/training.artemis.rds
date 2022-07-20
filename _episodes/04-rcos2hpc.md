@@ -1,28 +1,28 @@
 ---
-title: "Transfer between remote RCOS and Artemis HPC"
+title: "Transfer between remote RDS and Artemis HPC"
 teaching: 30
 objectives:
-- "Learn to move data between Artemis HPC and RCOS"
+- "Learn to move data between Artemis HPC and RDS"
 - "Learn to make dependant compute jobs"
-- "Learn to connect directly to RCOS"
+- "Learn to connect directly to RDS"
 keypoints:
 - "Use cp, mv, rsync"
 - "Use dt-scripts"
 - "Use -W depend flags"
-- "Connect from local to RCOS"
+- "Connect from local to RDS"
 ---
 
-# Transfer between RCOS and Artemis HPC 
+# Transfer between RDS and Artemis HPC 
 
-You now have scripts, raw data and a reference file. Your collaborator has informed you that the reference files also needs associated  ‘index files’ and that they have previously prepared these and saved them on RCOS. The Artemis compute nodes can’t read directly from RCOS. They may appear seamless, but they are actually different physical machines situated at opposite ends of Sydney! So these files need to be copied from RCOS to Artemis. 
+You now have scripts, raw data and a reference file. Your collaborator has informed you that the reference files also needs associated  ‘index files’ and that they have previously prepared these and saved them on RDS. The Artemis compute nodes can’t read directly from RDS. They may appear seamless, but they are actually different physical machines situated at opposite ends of Sydney! So these files need to be copied from RDS to Artemis. 
 
-What methods could you use to copy from RCOS to Artemis? Which do you think is the best method?
+What methods could you use to copy from RDS to Artemis? Which do you think is the best method?
 
  * ```cp``` is easy to use, but is subject to the same issues as running any command in the foreground: it is subject to termination if your session is lost 
 
  * ```mv``` same as above, but worse, since ‘mv’ removes the file on the source so you may lose your data altogether in the event of a prematurely aborted transfer! 
  
-Your collaborator has placed the reference files needed in the ```Training``` RCOS space in a directory called ```Dog_disease/Ref```. To get these files into your current working directory for today, you could run the following unsafe command:  
+Your collaborator has placed the reference files needed in the ```Training``` RDS space in a directory called ```Dog_disease/Ref```. To get these files into your current working directory for today, you could run the following unsafe command:  
 ~~~
  cp -v /rds/PRJ-Training/Dog_disease/Ref/* /project/Training/<yourname>
 ~~~
@@ -55,7 +55,7 @@ You can include additional arguments, such as:
 
 and others. Run ```dt-script -h``` for a full list.
 
-Your collaborator has placed the reference files needed in the ```Training``` RCOS space in a directory called ```Dog_disease/Ref```. To get these files safely into your current working directory for today, run the following command: 
+Your collaborator has placed the reference files needed in the ```Training``` RDS space in a directory called ```Dog_disease/Ref```. To get these files safely into your current working directory for today, run the following command: 
 
 ~~~
 dt-script -P Training -f /rds/PRJ-Training/Dog_disease/Ref/ -t /project/Training/<yourDirectoryName>/ 
@@ -83,7 +83,7 @@ A job can depend on multiple jobs, using the syntax:
 -W depend=afterok:<joBID1>:<jobID2>:<jobID3> 
 ```
 
-The process is to submit the first job, then submit the second job including the jobID of the first job as the argument to ‘depend’. We will now use this method to transfer the correct raw data from RCOS to Artemis, and submit the analysis job to run when the data transfer completes. 
+The process is to submit the first job, then submit the second job including the jobID of the first job as the argument to ‘depend’. We will now use this method to transfer the correct raw data from RDS to Artemis, and submit the analysis job to run when the data transfer completes. 
 
 
 The data we need has been re-uploaded, so we can re-download it with the ```download.pbs``` jobscript.
@@ -135,11 +135,11 @@ Note that the map job shows status ```H``` (held). It will remain ‘held’ unt
 Pretty neat right? A very flexible and time-saving trick! 
 
 
-# Transfer from Artemis HPC to RCOS: Backup project! 
+# Transfer from Artemis HPC to RDS: Backup project! 
 
-It is great practice to routinely back up your Artemis project (whether the data be in /project or /scratch) to RCOS on a regular basis (ideally, after every day you have worked on the project). This is made so simple with dt-script, there is no excuse not to 😊 
+It is great practice to routinely back up your Artemis project (whether the data be in /project or /scratch) to RDS on a regular basis (ideally, after every day you have worked on the project). This is made so simple with dt-script, there is no excuse not to 😊 
 
-Today you want to back up your working directory, to your personal location on RCOS. Since many of you do/will have many colleagues working in the same Artemis project as you, this may be more applicable at times than backing up an entire project folder. You do not need to first create the destination directory on RCOS, because ‘rsync’ makes precise use of trailing slashes in directory paths to make or not make new directory levels. If we leave the trailing slash from the source (our working directory) it will automatically create that directory for us on the destination if that directory doesn’t exist. See ```man rsync``` for more information on this behavior. 
+Today you want to back up your working directory, to your personal location on RDS. Since many of you do/will have many colleagues working in the same Artemis project as you, this may be more applicable at times than backing up an entire project folder. You do not need to first create the destination directory on RDS, because ‘rsync’ makes precise use of trailing slashes in directory paths to make or not make new directory levels. If we leave the trailing slash from the source (our working directory) it will automatically create that directory for us on the destination if that directory doesn’t exist. See ```man rsync``` for more information on this behavior. 
 
 To back up your working directory for today, make sure you are situated within the directory containing the data to backup (so that you can make use of `pwd` shortcut, which omits the trailing slash), then run: 
 
@@ -150,18 +150,18 @@ dt-script -P Training -N backup<yourName> -f `pwd` -t /rds/PRJ-Training
 
 Backup sorted! 
 
-Check using ```ls /rds/PRJ-Training``` that your data has been backed up on RCOS. Note that the time stamps are preserved. 
+Check using ```ls /rds/PRJ-Training``` that your data has been backed up on RDS. Note that the time stamps are preserved. 
 
-# Transfer from RCOS to local with FileZilla 
+# Transfer from RDS to local with FileZilla 
 
-Just as we accessed Artemis through the FileZilla interface earlier, we can likewise directly access the RCOS server. The hostname for RCOS server is 
+Just as we accessed Artemis through the FileZilla interface earlier, we can likewise directly access the RDS server. The hostname for RDS server is 
 
-From external to university network:
+From external to University network:
 ```
 research-data-ext.sydney.edu.au
 ```
 
-From internal to university network:
+From internal to University network:
 ```
 research-data-int.sydney.edu.au  
 ```
@@ -173,7 +173,7 @@ sftp://research-data-int.sydney.edu.au
 {: .bash}
  
 
-The username, password and port are as before. Trust the host if prompted. 
+The username (unikey), password (unikey password) and port (22) are as before. Trust the host if prompted. 
 
 Once successfully connected, notice that the ```Remote site``` indicates you are situated in ```/home/<yourUnikey>```. 
 
