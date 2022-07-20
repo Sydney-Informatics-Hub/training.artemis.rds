@@ -97,6 +97,8 @@ Done. Now that file is on Artemis in the folder you have uploaded it to.
 Now go back to your **remote terminal connected to Artemis** and run the following commands to untar the archive, move the scripts, and delete the archive and empty directory:
 
 ~~~
+mkdir /project/Training/<yourDirectoryName>
+cd /project/Training/<yourDirectoryName> 
 tar -zxvf dogScripts.tar.gz 
 mv dogScripts/* . 
 rmdir dogScripts 
