@@ -33,7 +33,7 @@ gunzip cfa_ref_CanFam3.1_chr5.fa.gz
 The University has access to several platforms that are useful for storing/transferring/serving research data.
 
 * ~~Dropbox~~
-* ~~[AARNet Cloudstor](https://cloudstor.aarnet.edu.au/)
+* ~~[AARNet Cloudstor](https://cloudstor.aarnet.edu.au/)~~
 * Microsoft OneDrive/SharePoint/Office365
 * [GitHub Enterprise](https://github.sydney.edu.au/)
 * [eNotebooks](https://sydneyuni.service-now.com/sm?id=kb_article_view&sysparm_article=KB0013721&sys_kb_id=d247761f874545106569cae20cbb35d9&spa=1)
