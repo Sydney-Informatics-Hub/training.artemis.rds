@@ -58,7 +58,7 @@ Check out the online documentation for more information:
 ***Reminder: Artemis is not backed up!***
 
 <figure>
-  <img src="{{ page.root }}/fig/artemisbackup.png" style="margin:10px;width:600px"/>
+  <img src="{{ page.root }}/fig/05_backup.png" style="margin:10px;width:600px"/>
   <figcaption> Caption 
 </figcaption>
 </figure><br>
