@@ -41,7 +41,7 @@ The University has access to several platforms that are useful for storing/trans
 * Commerical Cloud (AWS, Ronin, GCP, Azure, etc)
 * [ICT hosted virtual machines](https://sydneyuni.service-now.com/sm?id=kb_article_view&sysparm_article=KB0010875)
 
-See here for more info: https://sydneyuni.service-now.com/sm?sys_kb_id=c197f25f874545106569cae20cbb3507&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=50122eb5db30155067530793f39619a3
+See [Service-Now Knowledge Article](https://sydneyuni.service-now.com/sm?sys_kb_id=c197f25f874545106569cae20cbb3507&id=kb_article_view&sysparm_rank=1&sysparm_tsqueryId=50122eb5db30155067530793f39619a3) for more information.
 
 
 # Wrap up 
