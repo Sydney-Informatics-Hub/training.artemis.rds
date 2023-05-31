@@ -4,7 +4,7 @@ root: .  # Is the only page that don't follow the partner /:path/index.html
 permalink: index.html  # Is the only page that don't follow the partner /:path/index.html
 ---
 
-**Synopsis:** This course is aimed at researchers who want to learn how to transfer data between your local computer, an external source, the **Research Data Store (RDS)** and the **Artemis High Performance Computer (HPC)**. This course will introduce smart strategies for maanging your data and how to back up HPC output onto the RDS. The skills and tools learned in this session can be applicable to any remote storage and HPC environments.
+**Synopsis:** This course is aimed at researchers who want to learn how to transfer data between your local computer, an external source, the **Research Data Store (RDS)** and the **Artemis High Performance Computer (HPC)**. This course will introduce smart strategies for managing your data and how to back up HPC output onto the RDS. The skills and tools learned in this session can be applicable to any remote storage and HPC environments.
 
 The live training consists of instruction and practical exercises, covering tools such as: scp, rsync, mv, cp, filezilla, winscp, ssh, smbclient.
 
@@ -16,7 +16,7 @@ It follows on from the introductory courses  [‘_Introduction to Artemis HPC_�
 **Recorded Lesson:** You can watch the recorded lesson from April 24, 2020, here: [https://cloudstor.aarnet.edu.au/plus/s/Yb3c4nqE48PwoT4](https://cloudstor.aarnet.edu.au/plus/s/Yb3c4nqE48PwoT4)
 
 > ## Prerequisites
-> You must have competency on the Unix/Linux command line. If you are interested in learning HPC but have no Unix/Linux command-line skills, you MUST first take an [Introduction to Unix/Linux](https://intersect.org.au/training/course/unix) course, followed by [‘_Introduction to Artemis HPC_’]({{ site.sih_pages }}/training.artemis.interhpc). These are [scheduled regularly on campus](https://informatics.sydney.edu.au/training/#calendar).
+> You should have competency on the Unix/Linux command line. If you are interested in learning HPC but have no Unix/Linux command-line skills, you should first take an [Introduction to Unix/Linux](https://intersect.org.au/training/course/unix) course, followed by [‘_Introduction to Artemis HPC_’]({{ site.sih_pages }}/training.artemis.interhpc). These are [scheduled regularly on campus](https://informatics.sydney.edu.au/training/#calendar).
 >
 > **OWN LAPTOP REQUIRED**.
 {: .prereq}
@@ -25,7 +25,7 @@ It follows on from the introductory courses  [‘_Introduction to Artemis HPC_�
 
 > ## Course survey!
 >
-> **_Please_** fill out our **[course survey](https://redcap.sydney.edu.au/surveys/?s=FJ33MYNCRR)** before you leave!
+> **_Please_** fill out our **[course survey](https://redcap.sydney.edu.au/surveys/?s=FJ33MYNCRR&training=11)** before you leave!
 >
 > Help us help you! :smiley:
 {: .testimonial}
