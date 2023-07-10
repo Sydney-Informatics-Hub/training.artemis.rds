@@ -17,15 +17,11 @@ This episode introduces the Research Data Storage options available at the Unive
 
 # What is the Research Data Store?
 
-Artemis is not backed up. Its hardware is geared towards processing. We have a dedicated set of machines for safe data storage, collectively referred to as the Research Data Store [RDS](https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/228589620/Research+Data+Store). RDS has two legacy “flavours”: ***Research Computing Optimised Storage (RCOS)*** and ***‘Classic’ RDS***. While the names differ, they are both RDS, both backed up, and both linked to a project via the Researcher Dashboard (DashR). Each project in [DashR](https://dashr.sydney.edu.au/) will detail your RDS service.
+Artemis is not backed up. Its hardware is geared towards processing. We have a dedicated set of machines for safe data storage, collectively referred to as the Research Data Store [RDS](https://sydneyuni.atlassian.net/wiki/spaces/RC/pages/228589620/Research+Data+Store). 
 
+RDS has two legacy “flavours”: ***Research Computing Optimised Storage (RCOS)*** and ***‘Classic’ RDS***. They were both amalgamted into the ***Nextgen RDS*** in 2021 simply referred to now as ***The RDS***, but you may see references to them in some documentation. Access to RDS is granted and managed through a "Research Data Managment Plan" project completed in the [Research Dashboard (dashr)](https://dashr.sydney.edu.au/).
 
-
-***RCOS*** is a Linux-style (NFS) data storage service, accessible via SFTP from an RCOS server. You can also access RCOS from an Artemis session, as RCOS is ‘mounted’ (appears as an accessible drive) on the Artemis HPC. Data can thus be easily moved between RCOS and Artemis using a variety of methods such as ‘cp’, ‘scp’, ‘rsync’ etc. However, RCOS is not easily network accessible on Windows and OSX. So if you have data on RDS that you need to access via an application on your local computer, it can be harder to do this with RCOS. 
-
-***Classic RDS*** is a Windows-style (CIFS) data storage service accessible as a network drive on Windows, Mac and Linux systems. Network accessibility is handy if you often access your RDS data locally. You can read RDS data into local applications, or easily drag and drop files between your local hard drive (or USB/external hard drive) and classic RDS. Transfer of data between ‘classic’ RDS and Artemis is more difficult, and thus not the recommended data storage option for you if you are a frequent HPC user or work with large datasets.
-
-~~ICT will be implementing a more seamless RDS in the future!~~ ICT has implemented a seamless RDS comprising the benefits of both Classic and RCOS systems (called ***NextGen RDS**)
+The RDS file server that can be mounted on Windows, MacOS, and Linux using a variety of protocols. On Linux-style systems it is accessible via `sftp`, `scp`,  or from an Artemis session, as RDS is ‘mounted’ (appears as an accessible drive) on the Artemis HPC. Data can thus be easily moved between RDS and Artemis using a variety of methods such as ‘cp’, ‘scp’, ‘rsync’ etc. On Windows, Mac and Linux systems the RDS may be mounted as a network drive using `SMB`. Then you may read RDS data into local applications, or easily drag and drop files between your local hard drive (or USB/external hard drive) and the RDS. 
 
 Check out the online documentation for more information:
 [https://sydneyuni.atlassian.net/wiki/spaces/RC/overview](https://sydneyuni.atlassian.net/wiki/spaces/RC/overview)
